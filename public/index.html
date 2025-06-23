@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aaggu</title>
+    <link rel="icon" href="img/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="monetag" content="168bbef1f46baa69bc0823f4234301bb" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/landing.css" rel="stylesheet" />
+    <link href="css/landing-phone.css" rel="stylesheet" />
+
+    <!-- Favicon and Meta -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5" />
+    <meta name="favicon/msapplication-TileColor" content="#da532c" />
+    <meta name="favicon/theme-color" content="#333333" />
+  </head>
+
+  <body>
+    <div id="main" class="main-container">
+      <!-- Top Bar -->
+      <header id="top-bar" class="top-bar modern-bar">
+        <div id="logo" class="logo">
+          <img width="32" src="/assets/logo.png" alt="Aaggu Logo" />
+        </div>
+        <div id="top-right" class="top-right">
+          <div id="peopleOnline" class="people-online">
+            <p><span>0</span>+ online now</p>
+          </div>
+          <button id="feedback-btn" class="button feedback-button">
+            Provide Feedback
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main id="content" class="content-section">
+        <!-- Intro Text -->
+        <section id="social-message" class="social-message card">
+          <p id="help-text">
+            <strong>Explore Free Random Video Chat</strong>
+            <br /><br />
+            Welcome to Aaggu — Your Gateway to Random Chats! Aaggu is a free,
+            anonymous video and text chat platform that instantly connects you
+            with strangers from around the world. Whether you’re here to make
+            new friends, beat boredom, or just talk to someone new, Aaggu is
+            your place to explore spontaneous conversations. No sign-up
+            required. Just choose your interest (optional), click a button, and
+            get chatting — it’s that easy. Experience safe and exciting
+            connections with people from different cultures, all at your
+            fingertips.
+          </p>
+        </section>
+
+        <!-- Info -->
+        <section id="instructions" class="instructions info-text">
+          <p>
+            <i class="fas fa-exclamation-triangle" style="color: orange"></i>
+            Video is being monitored. Keep it clean.
+          </p>
+        </section>
+
+        <!-- Chat Options -->
+        <section id="options-container" class="options-container">
+          <div id="interest-container" class="interest-box card1">
+            <p class="section-title">What do you wanna talk about?</p>
+            <input
+              type="text"
+              id="interests"
+              class="interest-input"
+              placeholder="Add your interests (optional)" />
+            <div id="tag-container" class="tag-container"></div>
+          </div>
+
+          <div id="chat-options" class="chat-options card1">
+            <p class="section-title">Start chatting</p>
+            <div id="button-container" class="button-container">
+              <button class="button" id="text-btn">Text</button>
+              <p class="or-text">or</p>
+              <button class="button" id="video-btn">Video</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer modern-footer">
+          <p>&#169; Aaggu 2025</p>
+          <a href="mailto://aaggutv@gmail.com">Contact us</a>
+        </footer>
+      </main>
+
+      <!-- Disclaimer -->
+      <section id="disclaimer" class="disclaimer-section">
+        <p>
+          By using the Aaggu website, and/or related products...
+          <strong>Aaggu website IS PROVIDED AS IS</strong> and to the maximum
+          extent allowed...
+        </p>
+      </section>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div id="feedbackModal" class="modal">
+      <div class="modal-content modern-modal">
+        <span class="close">&times;</span>
+        <h2>Provide Feedback</h2>
+        <form id="feedbackForm">
+          <textarea
+            id="feedbackText"
+            rows="10"
+            class="feedback-textarea"
+            placeholder="Your feedback..."
+            required></textarea>
+          <input
+            type="submit"
+            class="button submit-btn"
+            id="submit-btn"
+            value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/landing.js" type="module"></script>
+  </body>
+</html>
