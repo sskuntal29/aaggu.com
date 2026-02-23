@@ -1,1 +1,1 @@
-export const WEBSOCKET_URL = `${location.protocol === 'https:' ? 'wss' : 'ws'}://${location.host}`;git 
+export const WEBSOCKET_URL = "wss://aaggu-com.onrender.com";
